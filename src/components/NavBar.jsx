@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { GrGithub } from "react-icons/gr";
 import { GrLinkedinOption } from "react-icons/gr";
+import { FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
+
+
 
 const NavBar = () => {
+
+  const [nav,setNav]=useState(false);
     
     const Links=[
         {
@@ -33,9 +39,9 @@ Link:'Projects'
     ]
   return (
     <div >
-     <div className='w-full h-24   flex  items-center px-20'>
+     <div className='w-full h-24   flex justify-between  items-center px-20 border border-red-500'>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold '>Rajae LAALAMA</div>
-        <ul className='flex  justify-between  items-center px-60  '>
+        <ul className='hidden md:flex  justify-between  items-center px-60  '>
             {
                 Links.map(({id,Link})=>(
                      <li key={id} className='px-6   text-gray-600 hover:text-violet-500 transform transition-transform duration-300 hover:scale-125 cursor-pointer'>{Link}</li>
@@ -46,7 +52,7 @@ Link:'Projects'
         
             </ul>
 
-            <ul className='flex items-center justify-center'>
+            <ul className='hidden md:flex items-center justify-center'>
               <li className=' pl-6  '>
                 <span className="text-gray-500 hover:text-violet-300 ">
   <GrGithub size={25} className=''/>
@@ -56,7 +62,11 @@ Link:'Projects'
 </span>
            
             </ul>
+            <div onClick={()=>setNav(!nav)} className='md:hidden '>
+              {nav?<FaTimes size={25} className='text-gray-500' />:<FaBars size={25} className='text-gray-500'/>}
             
+
+            </div>
         </div>
 
     </div>
