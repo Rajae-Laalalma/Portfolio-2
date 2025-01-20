@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
+import Techstack from "./components/Techstack";
 
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
   <NavBar/>
   <Home/>
+  <Techstack/>
     </div>
   );
 }
