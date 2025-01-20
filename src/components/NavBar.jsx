@@ -39,7 +39,7 @@ Link:'Projects'
     ]
   return (
     <div >
-     <div className='w-full h-24   flex justify-between  items-center px-20 border border-red-500'>
+     <div className='w-full h-24   flex justify-between  items-center px-20 '>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold '>Rajae LAALAMA</div>
         <ul className='hidden md:flex  justify-between  items-center px-60  '>
             {
