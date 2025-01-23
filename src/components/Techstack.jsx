@@ -15,12 +15,12 @@ const Techstack = () => {
   return (
     <div className='w-full md:h-screen h-50 bg-neutral-300 flex flex-col items-center'>
       <div>
-        <h1 className='pt-10 text-4xl text-blue-900 font-title font-bold flex justify-center'>My Tech Stack</h1>
+        <h1 className='pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center'>My Tech Stack</h1>
         <p className='flex justify-center text-2xl text-gray-500 py-4'>Technologies I’ve been working with recently</p>
       </div>
 
      
-      <div className='flex flex-wrap justify-center items-center gap-6 mt-6'>
+      <div className='flex flex-wrap justify-center items-center gap-6 mt-10'>
         <div className='flex justify-center items-center w-40 h-40 transform transition-transform duration-300 hover:scale-125'>
           <img src={html} alt="" className='w-32 h-32' />
         </div>
