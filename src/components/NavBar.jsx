@@ -3,6 +3,7 @@ import { GrGithub } from "react-icons/gr";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 
 
@@ -10,32 +11,34 @@ const NavBar = () => {
 
   const [nav,setNav]=useState(false);
     
-    const Links=[
+    const links=[
         {
               id:1,
-        Link:'Home'
+        link:'Home'
 
         },
         {
             id:2,
-      Link:'About'
+      link:'About'
 
       },
   {
     id:3,
-Link:'Tech Stack'
+link:'Tech Stack'
 
 },
 {
 id:4,
-Link:'Projects'
+link:'Projects'
 
 },
 {
   id:5,
-  Link:'Contact'
+  link:'Contact'
   
   }
+  
+
     ]
   return (
     <div >
@@ -43,8 +46,10 @@ Link:'Projects'
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold '>Rajae LAALAMA</div>
         <ul className='hidden md:flex  justify-between  items-center px-60  '>
             {
-                Links.map(({id,Link})=>(
-                     <li key={id} className='px-6   text-gray-600 hover:text-violet-500 transform transition-transform duration-300 hover:scale-125 cursor-pointer'>{Link}</li>
+                links.map(({id,link})=>(
+                     <li key={id} className='px-6   text-gray-600 hover:text-violet-500 transform transition-transform duration-300 hover:scale-125 cursor-pointer'>
+                       <Link to={link} smooth duration={500}>{link}</Link>
+                    </li>
                 ))
             }
           
@@ -69,8 +74,8 @@ Link:'Projects'
             {nav &&(
                  <ul className=' md:hidden  flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-blue-500 to-violet-500 '>
             {
-                Links.map(({id,Link})=>(
-                     <li key={id} className='py-4 text-white cursor-pointer font-title text-2xl'>{Link}</li>
+                links.map(({id,link})=>(
+                     <li key={id} className='py-4 text-white cursor-pointer font-title text-2xl'>{link}</li>
                 ))
             }
           
@@ -80,6 +85,7 @@ Link:'Projects'
             )}
          
         </div>
+        
 
     </div>
   )

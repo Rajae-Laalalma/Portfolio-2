@@ -34,7 +34,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center">
+    <div id="Projects" className="w-full h-screen flex flex-col items-center">
       <div>
         <h1 className="pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center">
           Projects

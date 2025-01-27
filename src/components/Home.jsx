@@ -3,7 +3,7 @@ import profile from '../assets/profile.jpg'
 
 const Home = () => {
   return (
-    <div className='md:flex md:flex-row  justify-center items-center  w-full h-screen px-10 py-10 '>
+    <div id="Home" className='md:flex md:flex-row  justify-center items-center  w-full h-screen px-10 py-10 '>
         <div className='  text-4xl font-title font-bold text-blue-900 md:pr-40'>
             
             <h1 className=''>Hi 👋,</h1>
@@ -15,6 +15,7 @@ const Home = () => {
 </div>
 
       <div className='w-80 h-80 rounded-full mx-40 m-20 md:mx-8  '><img src={profile} alt=""  className=' w-80 h-80  rounded-full border-4 border-transparent bg-clip-border bg-gradient-to-r from-blue-500 to-violet-600  '/></div>
+      
     </div>
   )
 }
