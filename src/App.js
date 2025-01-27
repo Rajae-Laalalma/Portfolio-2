@@ -1,3 +1,4 @@
+import Contacts from "./components/Contacts";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ function App() {
   <Home/>
   <Techstack/>
   <Projects/>
+  <Contacts/>
     </div>
   );
 }
