@@ -17,23 +17,19 @@ const NavBar = () => {
         link:'Home'
 
         },
-        {
-            id:2,
-      link:'About'
-
-      },
+      
   {
-    id:3,
+    id:2,
 link:'Tech Stack'
 
 },
 {
-id:4,
+id:3,
 link:'Projects'
 
 },
 {
-  id:5,
+  id:4,
   link:'Contact'
   
   }
@@ -75,7 +71,9 @@ link:'Projects'
                  <ul className=' md:hidden  flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-blue-500 to-violet-500 '>
             {
                 links.map(({id,link})=>(
-                     <li key={id} className='py-4 text-white cursor-pointer font-title text-2xl'>{link}</li>
+                     <li key={id} className='py-4 text-white cursor-pointer font-title text-2xl'>
+                      <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>{link}</Link></li>
+                     
                 ))
             }
           
