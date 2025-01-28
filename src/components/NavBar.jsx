@@ -56,10 +56,17 @@ link:'Projects'
             <ul className='hidden md:flex items-center justify-center '>
               <li className=' pl-6  '>
                 <span className="text-gray-500 hover:text-violet-300  ">
-  <GrGithub size={25} className=' transform transition-transform duration-300 hover:scale-125'/>
+                  <a href="https://github.com/Rajae-Laalalma" target="_blank" rel="noopener noreferrer"
+      aria-label="Github Profile">
+                  <GrGithub size={25} className=' transform transition-transform duration-300 hover:scale-125'/>
+                  </a>
+  
 </span> </li>
 <span>
-  <li className='flex items-center justify-center w-6 h-6 m-2 rounded-full bg-gray-500 hover:bg-violet-300 text-white  transform transition-transform duration-300 hover:scale-125 '><GrLinkedinOption className='w-4 h-4' /></li>
+  <li className='flex items-center justify-center w-6 h-6 m-2 rounded-full bg-gray-500 hover:bg-violet-300 text-white  transform transition-transform duration-300 hover:scale-125 '>
+    <a href="https://www.linkedin.com/in/rajae-laalalma/" target="_blank" rel="noopener noreferrer">
+      <GrLinkedinOption className='w-4 h-4' />
+      </a></li>
 </span>
            
             </ul>

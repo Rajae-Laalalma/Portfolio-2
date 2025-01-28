@@ -34,7 +34,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full h-screen flex flex-col items-center">
+    <div id="Projects" className="w-full md:h-screen flex flex-col items-center py-16">
       <div>
         <h1 className="pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center">
           Projects
@@ -43,13 +43,13 @@ const Projects = () => {
           Things I’ve built so far
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-14 px-4 hover:">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-14 px-4 ">
         {projects.map(({ id, title, description, image, livePreview, viewCode }) => (
           <div
             key={id}
-            className="h-80 w-72 rounded-2xl shadow-2xl flex flex-col items-center p-4 transform transition-transform duration-300 hover:scale-125"
+            className="h-80 w-72 rounded-2xl shadow-2xl flex flex-col items-center p-4 "
           >
-            <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg" />
+            <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg transform transition-transform duration-300 hover:scale-110" />
             <h1 className="text-blue-900 font-title font-bold mt-4">{title}</h1>
             <p className="text-gray-500 text-center mt-2">{description}</p>
             <div className="flex justify-between gap-4 mt-4">
