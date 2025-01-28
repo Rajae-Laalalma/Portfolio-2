@@ -21,7 +21,7 @@ const Techstack = () => {
 
      
       <div className='flex flex-wrap justify-center items-center gap-6 mt-10'>
-        <div className='flex justify-center items-center w-40 h-40 transform transition-transform duration-300 hover:scale-125'>
+        <div className='flex justify-center items-center w-40  h-40  transform transition-transform duration-300 hover:scale-125'>
           <img src={html} alt="" className='w-32 h-32' />
         </div>
         <div className='flex justify-center items-center w-40 h-40 transform transition-transform duration-300 hover:scale-125 '>

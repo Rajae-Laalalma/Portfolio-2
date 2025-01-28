@@ -33,10 +33,10 @@ const Contacts = () => {
     <div name="contact">
       <div id="Contact" className="w-full h-screen flex flex-col items-center bg-neutral-300">
         <div>
-          <h1 className="pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center">
+          <h1 className="pt-20 md:text-4xl text-xl text-blue-900 font-title font-bold flex justify-center">
             Contact
           </h1>
-          <p className="flex justify-center text-3xl text-gray-500 py-6">
+          <p className="flex justify-center md:text-3xl text-xl text-gray-500 py-6">
             Submit the form below to get in touch with me
           </p>
         </div>
@@ -85,7 +85,7 @@ const Contacts = () => {
             <div className="flex justify-center items-center">
               <button
                 type="submit"
-                className="w-32 h-10 rounded bg-violet-500 text-xl text-white"
+                className="w-32 h-10 rounded bg-violet-500 md:text-xl text-white"
               >
                 Let's Talk
               </button>
