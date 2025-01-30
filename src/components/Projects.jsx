@@ -29,8 +29,8 @@ const projects = [
     title: "Landing Page Ark-X",
     description: "Tech stack : HTML, JavaScript, React, MongoDB",
     image: page3,
-    livePreview: "https://example.com/live3",
-    viewCode: "https://github.com/example/repo3",
+    livePreview: "https://arkx-2.netlify.app/",
+    viewCode: "https://github.com/Rajae-Laalalma/arkx-2",
   },
   {
     id: 4,

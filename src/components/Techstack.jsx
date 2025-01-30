@@ -11,7 +11,7 @@ import mongodb from '../assets/mongodb.png'
 import { GrGithub } from "react-icons/gr";
 
 const Techstack = () => {
-  
+
   return (
     <div id="Tech Stack" className='w-full md:h-screen   bg-neutral-300 flex flex-col items-center'>
       <div>
@@ -19,7 +19,7 @@ const Techstack = () => {
         <p className='flex justify-center text-2xl text-gray-500 py-4'>Technologies I’ve been working with recently</p>
       </div>
 
-     
+
       <div className='flex flex-wrap justify-center items-center gap-6 mt-10'>
         <div className='flex justify-center items-center w-40  h-40  transform transition-transform duration-300 hover:scale-125'>
           <img src={html} alt="" className='w-32 h-32' />
@@ -41,7 +41,7 @@ const Techstack = () => {
         </div>
       </div>
 
-    
+
       <div className='flex flex-wrap justify-center items-center gap-6 mt-8'>
         <div className='flex justify-center items-center w-40 h-40 transform transition-transform duration-300 hover:scale-125'>
           <img src={git} alt="" className='w-32 h-32' />

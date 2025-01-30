@@ -9,11 +9,11 @@ import Techstack from "./components/Techstack";
 function App() {
   return (
     <div className="App">
-  <NavBar/>
-  <Home/>
-  <Techstack/>
-  <Projects/>
-  <Contacts/>
+      <NavBar />
+      <Home />
+      <Techstack />
+      <Projects />
+      <Contacts />
     </div>
   );
 }
