@@ -2,6 +2,8 @@ import React from "react";
 import page1 from "../assets/page1.PNG";
 import page2 from "../assets/page2.PNG";
 import page3 from "../assets/page3.PNG";
+import page4 from "../assets/guide-Tour.PNG";
+import page5 from "../assets/sit-covide-19.PNG";
 import { GrGithub } from "react-icons/gr";
 import { IoIosLink } from "react-icons/io";
 
@@ -24,58 +26,70 @@ const projects = [
   },
   {
     id: 3,
-    title: "landing page ark-x",
-    description: "Tech stack : HTML , JavaScript, React,Mongo DB",
-    image:page3,
+    title: "Landing Page Ark-X",
+    description: "Tech stack : HTML, JavaScript, React, MongoDB",
+    image: page3,
     livePreview: "https://example.com/live3",
     viewCode: "https://github.com/example/repo3",
+  },
+  {
+    id: 4,
+    title: "Guide-Tour",
+    description: "Tech stack : HTML, Tailwind CSS, JavaScript, React, MongoDB",
+    image: page4,
+    livePreview: "https://example.com/live3",
+    viewCode: "https://github.com/ZakariaAkrabou/GuideTour-final/tree/feature/rajae",
+  },
+
+  {
+    id: 5,
+    title: "Covide-19",
+    description: "Tech stack : HTML, CSS",
+    image: page5,
+    livePreview: "https://site-web-covid-19.web.app/",
+    viewCode: "https://github.com/ZakariaAkrabou/GuideTour-final/tree/feature/rajae",
   },
 ];
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full md:h-screen flex flex-col items-center py-16">
-      <div>
-        <h1 className="pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center">
-          Projects
-        </h1>
-        <p className="flex justify-center text-3xl text-gray-500 py-6">
-          Things I’ve built so far
-        </p>
+    <div id="Projects" className="w-full  py-16 flex flex-col items-center bg-gray-100">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl text-blue-900 font-title font-bold">Projects</h1>
+        <p className="text-xl text-gray-500 mt-4">Things I’ve built so far</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-14 px-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
         {projects.map(({ id, title, description, image, livePreview, viewCode }) => (
           <div
             key={id}
-            className="h-80 w-72 rounded-2xl shadow-2xl flex flex-col items-center p-4 "
+            className="h-96 rounded-xl shadow-lg bg-white flex flex-col items-center p-4 transform transition-transform duration-300 hover:scale-105"
           >
-            <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg transform transition-transform duration-300 hover:scale-110" />
-            <h1 className="text-blue-900 font-title font-bold mt-4">{title}</h1>
-            <p className="text-gray-500 text-center mt-2">{description}</p>
-            <div className="flex justify-between gap-4 mt-4">
-              <div className="flex justify-center gap-1">
-                 <IoIosLink size={25} className="text-black" />
-              </div>
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h2 className="text-xl text-blue-900 font-semibold">{title}</h2>
+            <p className="text-gray-600 text-center text-sm mt-2">{description}</p>
+            <div className="flex items-center justify-around mt-4 w-full">
               <a
                 href={livePreview}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black underline font-medium"
+                className="flex items-center gap-2 text-blue-600 hover:underline"
               >
+                <IoIosLink size={20} />
                 Live Preview
               </a>
-              <div className="flex justify-center gap-1 ">
-                <GrGithub size={25} className="text-black"/>
               <a
                 href={viewCode}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black underline font-medium "
+                className="flex items-center gap-2 text-gray-700 hover:underline"
               >
+                <GrGithub size={20} />
                 View Code
               </a>
-              </div>
-              
             </div>
           </div>
         ))}
@@ -85,4 +99,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
