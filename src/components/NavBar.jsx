@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState }  from 'react';
+import { useContext } from 'react';
 import { GrGithub } from "react-icons/gr";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { MdDarkMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+import { DarkModeContext } from "../components/DarkModeContext";
 
 
 
 const NavBar = () => {
 
+
   const [nav, setNav] = useState(false);
 
+  
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   const links = [
     {
       id: 1,
@@ -38,7 +49,7 @@ const NavBar = () => {
   ]
   return (
     <div >
-      <div className='w-full h-24   flex justify-between  items-center px-20 '>
+      <div className='w-full h-24   flex justify-between  items-center px-20  '>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold '>Rajae LAALAMA</div>
         <ul className='hidden md:flex  justify-between  items-center px-60  '>
           {
@@ -68,7 +79,7 @@ const NavBar = () => {
                 <GrLinkedinOption className='w-4 h-4' />
               </a></li>
           </span>
-
+<li><button onClick={toggleDarkMode} className=''>{darkMode?<MdOutlineLightMode size={40} className='dark:text-white'/> : <MdDarkMode size={40}  />}</button></li>
         </ul>
         <div onClick={() => setNav(!nav)} className='md:hidden z-10'>
           {nav ? <FaTimes size={25} className='text-gray-500' /> : <FaBars size={25} className='text-gray-500' />}

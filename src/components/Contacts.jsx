@@ -83,12 +83,13 @@ const Contacts = () => {
             ></textarea>
 
             <div className="flex justify-center items-center">
-              <button
-                type="submit"
-                className="w-32 h-10 rounded bg-violet-500 md:text-xl text-white"
-              >
-                Let's Talk
-              </button>
+            <button
+  type="submit"
+  className="w-32 h-10 rounded-2xl bg-violet-500 md:text-xl text-white transition duration-300 ease-in-out hover:bg-blue-500 hover:scale-105"
+>
+  Let's Talk
+</button>
+
             </div>
           </form>
         </div>

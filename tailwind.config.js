@@ -12,5 +12,6 @@ fontFamily:{
     },
   },
   plugins: [],
+  darkMode:'class'
 }
 

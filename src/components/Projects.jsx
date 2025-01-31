@@ -53,7 +53,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full  py-16 flex flex-col items-center bg-gray-100">
+    <div id="Projects" className="w-full  py-16 flex flex-col items-center ">
       <div className="text-center mb-12">
         <h1 className="text-4xl text-blue-900 font-title font-bold">Projects</h1>
         <p className="text-xl text-gray-500 mt-4">Things I’ve built so far</p>

@@ -4,12 +4,14 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Techstack from "./components/Techstack";
+import { DarkModeProvider } from "./components/DarkModeContext";
 
 
 
 function App() {
   return (
-    <div className="App">
+    <DarkModeProvider>
+    <div className="App  bg-white dark:bg-gray-900 transition duration-300">
       <NavBar />
       <Home />
       <Techstack />
@@ -17,6 +19,7 @@ function App() {
       <Contacts />
       <Footer/>
     </div>
+    </DarkModeProvider>
   );
 }
 
