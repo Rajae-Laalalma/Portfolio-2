@@ -30,9 +30,9 @@ const Contacts = () => {
   };
 
   return (
-    <div name="contact">
-      <div id="Contact" className="w-full h-screen flex flex-col items-center bg-neutral-300">
-        <div>
+    <div name="contact ">
+      <div id="Contact" className="w-full h-screen flex flex-col items-center  ">
+        <div className="">
           <h1 className="pt-20 md:text-4xl text-xl text-blue-900 font-title font-bold flex justify-center">
             Contact
           </h1>
@@ -40,7 +40,7 @@ const Contacts = () => {
             Submit the form below to get in touch with me
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center shadow-2xl p-8 rounded-2xl">
           <form
             action="https://getform.io/f/bnllrejb"
             method="POST"
