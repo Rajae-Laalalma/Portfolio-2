@@ -29,13 +29,13 @@ const Footer = () => {
   ]
   return (
    
-      <div className='pt-[200px] '>
-        <div className='w-full h-24   flex justify-between  items-center px-20 '>
-        <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold px-4 '>Rajae LAALAMA</div>
+      <div className='pt-[200px]  '>
+        <div className='w-full h-24   flex justify-between  items-center md:px-20 '>
+        <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold px-4  whitespace-nowrap'>Rajae LAALAMA</div>
         
-       <ul className='hidden md:flex items-center justify-center '>
-        <li className='text-gray-500'>rajaerajaela@gmail.com</li>
-                 <li className=' pl-14 '>
+       <ul className=' flex items-center justify-center '>
+        <li className='text-gray-500 '>rajaerajaela@gmail.com</li>
+                 <li className=' md:pl-14 pl-6'>
                    <span className="text-gray-500 hover:text-violet-300  ">
                      <a href="https://github.com/Rajae-Laalalma" target="_blank" rel="noopener noreferrer"
                        aria-label="Github Profile">
@@ -53,14 +53,14 @@ const Footer = () => {
                </ul>
       
         </div>
-        <div className="border border-gray-400 w-[1400px] mx-auto"></div>
+        <div className="border border-gray-400 md:w-[1400px]  w-[450px] mx-auto"></div>
 
       <div className=' w-full h-24   flex justify-center  items-center px-[100px] '>
               
-              <ul className='hidden md:flex  justify-between  items-center px-60  '>
+              <ul className=' flex  justify-between  items-center px-60  '>
                 {
                   links.map(({ id, link }) => (
-                    <li key={id} className='px-6   text-gray-600 hover:text-violet-500  cursor-pointer'>
+                    <li key={id} className='px-6   text-gray-600 hover:text-violet-500  cursor-pointer whitespace-nowrap'>
                       <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                   ))

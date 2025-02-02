@@ -13,9 +13,9 @@ import { GrGithub } from "react-icons/gr";
 const Techstack = () => {
 
   return (
-    <div id="Tech Stack" className='w-full md:h-screen   dark:bg-gray-900 flex flex-col items-center'>
+    <div id="Tech Stack" className='w-full md:h-screen    dark:bg-gray-900 flex flex-col items-center'>
       <div>
-        <h1 className='pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center'>My Tech Stack</h1>
+        <h1 className='pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center dark:text-gray-300'>My Tech Stack</h1>
         <p className='flex justify-center text-2xl text-gray-500 py-4'>Technologies I’ve been working with recently</p>
       </div>
 

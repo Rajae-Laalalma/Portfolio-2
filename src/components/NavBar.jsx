@@ -48,8 +48,8 @@ const NavBar = () => {
 
   ]
   return (
-    <div >
-      <div className='w-full h-24   flex justify-between  items-center px-20  '>
+    <div className=' '>
+      <div className='w-full h-24    flex justify-between  items-center px-20  '>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold '>Rajae LAALAMA</div>
         <ul className='hidden md:flex  justify-between  items-center px-60  '>
           {
@@ -79,14 +79,14 @@ const NavBar = () => {
                 <GrLinkedinOption className='w-4 h-4' />
               </a></li>
           </span>
-<li><button onClick={toggleDarkMode} className=''>{darkMode?<MdOutlineLightMode size={40} className='dark:text-white'/> : <MdDarkMode size={40}  />}</button></li>
+<li><button onClick={toggleDarkMode} className=''>{darkMode?<MdOutlineLightMode size={30} className='dark:text-white'/> : <MdDarkMode size={30} className='text-gray-500 ' />}</button></li>
         </ul>
-        <div onClick={() => setNav(!nav)} className='md:hidden z-10'>
+        <div onClick={() => setNav(!nav)} className='md:hidden  z-20'>
           {nav ? <FaTimes size={25} className='text-gray-500' /> : <FaBars size={25} className='text-gray-500' />}
 
         </div>
         {nav && (
-          <ul className=' md:hidden  flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-blue-500 to-violet-500 '>
+          <ul className=' z-10 md:hidden  flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-blue-500 to-violet-500 '>
             {
               links.map(({ id, link }) => (
                 <li key={id} className='py-4 text-white cursor-pointer font-title text-2xl'>
@@ -98,12 +98,13 @@ const NavBar = () => {
             <li className='flex items-center justify-center w-6 h-6 m-2 rounded-full bg-gray-500 hover:bg-violet-300 text-white  transform transition-transform duration-300 hover:scale-125 '>
               <a href="https://github.com/Rajae-Laalalma" target="_blank" rel="noopener noreferrer"
                 aria-label="Github Profile">
-                <GrGithub size={25} className=' transform transition-transform duration-300 hover:scale-125 ' />
+                <GrGithub size={25} className=' transform transition-transform duration-300 hover:scale-125  ' />
               </a></li>
-            <li className='flex items-center justify-center w-6 h-6 m-2 rounded-full bg-gray-500 hover:bg-violet-300 text-white  transform transition-transform duration-300 hover:scale-125 '>
+            <li className='flex items-center justify-center w-6 h-6 m-2 rounded-full bg-gray-500 hover:bg-violet-300 text-white dark:text-gray-300 transform transition-transform duration-300 hover:scale-125 '>
               <a href="https://www.linkedin.com/in/rajae-laalalma/" target="_blank" rel="noopener noreferrer">
                 <GrLinkedinOption className='w-4 h-4' />
               </a></li>
+              <li><li><button onClick={toggleDarkMode} className=''>{darkMode?<MdOutlineLightMode size={30} className='dark:text-white'/> : <MdDarkMode size={30} className='text-gray-500 ' />}</button></li></li>
 
           </ul>
         )}

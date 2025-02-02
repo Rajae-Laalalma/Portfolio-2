@@ -53,30 +53,30 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full  py-16 flex flex-col items-center ">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl text-blue-900 font-title font-bold">Projects</h1>
-        <p className="text-xl text-gray-500 mt-4">Things I’ve built so far</p>
+    <div id="Projects" className="w-full   py-16 flex flex-col items-center ">
+      <div className="text-center mb-12 ">
+        <h1 className="text-4xl text-blue-900 font-title font-bold dark:text-gray-300">Projects</h1>
+        <p className="text-2xl text-gray-500 mt-4">Things I’ve built so far</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto ">
         {projects.map(({ id, title, description, image, livePreview, viewCode }) => (
           <div
             key={id}
-            className="h-96 rounded-xl shadow-lg bg-white flex flex-col items-center p-4 transform transition-transform duration-300 hover:scale-105"
+            className="h-96 rounded-xl shadow-lg bg-white flex flex-col items-center p-4 dark:bg-gray-600 transform transition-transform duration-300 hover:scale-105"
           >
             <img
               src={image}
               alt={title}
               className="w-full h-40 object-cover rounded-lg mb-4"
             />
-            <h2 className="text-xl text-blue-900 font-semibold">{title}</h2>
-            <p className="text-gray-600 text-center text-sm mt-2">{description}</p>
-            <div className="flex items-center justify-around mt-4 w-full">
+            <h2 className="text-xl text-blue-900 font-semibold dark:text-gray-300 py-2">{title}</h2>
+            <p className="text-gray-600 text-center text-sm mt-2 dark:text-gray-300 py-2">{description}</p>
+            <div className="flex items-center justify-around mt-4 w-full dark:text-gray-300">
               <a
                 href={livePreview}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-blue-600 hover:underline"
+                className="flex items-center gap-2 text-blue-600 hover:underline dark:text-gray-300"
               >
                 <IoIosLink size={20} />
                 Live Preview
@@ -85,7 +85,7 @@ const Projects = () => {
                 href={viewCode}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 hover:underline"
+                className="flex items-center gap-2 text-gray-700 hover:underline dark:text-gray-300"
               >
                 <GrGithub size={20} />
                 View Code

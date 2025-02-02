@@ -30,10 +30,10 @@ const Contacts = () => {
   };
 
   return (
-    <div name="contact ">
-      <div id="Contact" className="w-full h-screen flex flex-col items-center  ">
+   
+      <div id="Contact" className="   w-full h-screen flex flex-col items-center  ">
         <div className="">
-          <h1 className="pt-20 md:text-4xl text-xl text-blue-900 font-title font-bold flex justify-center">
+          <h1 className="pt-20 md:text-4xl text-xl text-blue-900 font-title font-bold flex justify-center dark:text-gray-300">
             Contact
           </h1>
           <p className="flex justify-center md:text-3xl text-xl text-gray-500 py-6">
@@ -51,7 +51,7 @@ const Contacts = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className={`rounded px-2 h-12 border-2 ${
+              className={`rounded px-2 h-12 border-2 dark:bg-gray-300 ${
                 errors.name ? "border-red-500" : "border-gray-400"
               } focus:outline-none`}
               value={formData.name}
@@ -63,7 +63,7 @@ const Contacts = () => {
               type="text"
               name="email"
               placeholder="Enter your email"
-              className={`rounded h-12 border-2 px-2 ${
+              className={`rounded h-12 border-2 px-2 dark:bg-gray-300 ${
                 errors.email ? "border-red-500" : "border-gray-400"
               } focus:outline-none`}
               value={formData.email}
@@ -77,7 +77,7 @@ const Contacts = () => {
               name="message"
               rows={10}
               placeholder="Enter your message"
-              className="rounded border-2 border-gray-400 focus:outline-none px-2"
+              className="rounded border-2 border-gray-400 focus:outline-none px-2 dark:bg-gray-300 "
               value={formData.message}
               onChange={handleChange}
             ></textarea>
@@ -85,7 +85,7 @@ const Contacts = () => {
             <div className="flex justify-center items-center">
             <button
   type="submit"
-  className="w-32 h-10 rounded-2xl bg-violet-500 md:text-xl text-white transition duration-300 ease-in-out hover:bg-blue-500 hover:scale-105"
+  className="w-32 h-10 rounded-2xl bg-violet-700 md:text-xl text-white dark:text-gray-300 transition duration-300 ease-in-out hover:bg-blue-500 hover:scale-105"
 >
   Let's Talk
 </button>
@@ -94,7 +94,7 @@ const Contacts = () => {
           </form>
         </div>
       </div>
-    </div>
+   
   );
 };
 
