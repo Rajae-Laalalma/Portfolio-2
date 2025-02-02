@@ -31,7 +31,7 @@ const Contacts = () => {
 
   return (
    
-      <div id="Contact" className="   w-full h-screen flex flex-col items-center  ">
+      <div id="Contact" className="   w-full h-screen flex flex-col items-center  " data-aos='fade-up' data-aos-delay='100'>
         <div className="">
           <h1 className="pt-20 md:text-4xl text-xl text-blue-900 font-title font-bold flex justify-center dark:text-gray-300">
             Contact
@@ -40,7 +40,7 @@ const Contacts = () => {
             Submit the form below to get in touch with me
           </p>
         </div>
-        <div className="flex justify-center items-center shadow-2xl p-8 rounded-2xl">
+        <div className="flex justify-center items-center shadow-2xl p-8 rounded-2xl" data-aos='fade-up' data-aos-delay='100'>
           <form
             action="https://getform.io/f/bnllrejb"
             method="POST"

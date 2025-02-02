@@ -14,13 +14,13 @@ const Techstack = () => {
 
   return (
     <div id="Tech Stack" className='w-full md:h-screen    dark:bg-gray-900 flex flex-col items-center'>
-      <div>
+      <div className='' data-aos='fade-up' data-aos-delay='100'>
         <h1 className='pt-20 text-4xl text-blue-900 font-title font-bold flex justify-center dark:text-gray-300'>My Tech Stack</h1>
         <p className='flex justify-center text-2xl text-gray-500 py-4'>Technologies I’ve been working with recently</p>
       </div>
 
 
-      <div className='flex flex-wrap justify-center items-center gap-6 mt-10'>
+      <div className='flex flex-wrap justify-center items-center gap-6 mt-10' data-aos='fade-up' data-aos-delay='100'>
         <div className='flex justify-center items-center w-40  h-40  transform transition-transform duration-300 hover:scale-125'>
           <img src={html} alt="" className='w-32 h-32' />
         </div>
@@ -42,7 +42,7 @@ const Techstack = () => {
       </div>
 
 
-      <div className='flex flex-wrap justify-center items-center gap-6 mt-8'>
+      <div className='flex flex-wrap justify-center items-center gap-6 mt-8'data-aos='fade-up' data-aos-delay='100' >
         <div className='flex justify-center items-center w-40 h-40 transform transition-transform duration-300 hover:scale-125'>
           <img src={git} alt="" className='w-32 h-32' />
         </div>

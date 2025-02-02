@@ -53,12 +53,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full   py-16 flex flex-col items-center ">
+    <div id="Projects" className="w-full   py-16 flex flex-col items-center " data-aos='fade-up' data-aos-delay='100'>
       <div className="text-center mb-12 ">
         <h1 className="text-4xl text-blue-900 font-title font-bold dark:text-gray-300">Projects</h1>
         <p className="text-2xl text-gray-500 mt-4">Things I’ve built so far</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto " data-aos='fade-up' data-aos-delay='100'>
         {projects.map(({ id, title, description, image, livePreview, viewCode }) => (
           <div
             key={id}

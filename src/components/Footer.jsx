@@ -29,7 +29,7 @@ const Footer = () => {
   ]
   return (
    
-      <div className='pt-[200px]  '>
+      <div className='pt-[200px]  ' data-aos='fade-up' data-aos-delay='100'>
         <div className='w-full h-24   flex justify-between  items-center md:px-20 '>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500  font-title text-2xl font-bold px-4  whitespace-nowrap'>Rajae LAALAMA</div>
         
